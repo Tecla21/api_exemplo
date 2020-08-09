@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  detalhe: MyText
+  number_of_view: 1
+  status: 1
+  category: one
+  user: one
+  source: one
+
+two:
+  title: MyString
+  detalhe: MyText
+  number_of_view: 1
+  status: 1
+  category: two
+  user: two
+  source: two
