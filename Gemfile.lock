@@ -205,6 +205,7 @@ DEPENDENCIES
   rack-attack
   rack-cors
   rails (~> 6.0.3, >= 6.0.3.2)
+  responders
   simple_token_authentication (~> 1.0)
   spring
   spring-watcher-listen (~> 2.0.0)
