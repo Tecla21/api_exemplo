@@ -10,6 +10,8 @@ ActiveSupport::Inflector.inflections(:en) do |inflect|
 #   inflect.uncountable %w( fish sheep )
 
     inflect.irregular 'category', 'categories'
+    inflect.irregular 'source', 'sources'
+    inflect.irregular 'post', 'posts'
 end
 
 # These inflection rules are supported but not enabled by default:

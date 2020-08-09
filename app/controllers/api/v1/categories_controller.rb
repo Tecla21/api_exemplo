@@ -23,7 +23,6 @@ class Api::V1::CategoriesController < Api::V1::ApiController
     end
     
     # PATCH/PUT /api/v1/categorys/1
-    
     def update
         if @category.update(category_params)
             render json: @category
