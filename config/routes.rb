@@ -7,6 +7,12 @@ Rails.application.routes.draw do
     :registrations => 'users/registrations',
     :sessions => 'users/sessions'
   }
+
+  namespace :api do
+    namespace :v1 do
+      resources :categories
+    end
+  end
   
   # devise_scope :user do
   #   post "users/sign_up", to: "registrations#create"
