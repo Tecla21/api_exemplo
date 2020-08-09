@@ -5,7 +5,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  enum tipo: {:admin => 0, :other => 1}
+  enum roles_masks: {:admin => 0, :other => 1}
   # validates :first_name, presence: true
   # validates :last_name, presence: true
 
