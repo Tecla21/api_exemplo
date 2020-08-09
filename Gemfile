@@ -22,6 +22,8 @@ gem 'rack-attack'
 gem 'devise'
 gem 'simple_token_authentication', '~> 1.0'
 gem 'responders'
+gem 'cancancan'
+
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
