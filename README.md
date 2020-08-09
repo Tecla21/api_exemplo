@@ -1,10 +1,15 @@
 # api_exemplo
-Criação de uma api para um bloq pessoal
+Creation of an example api, with authentication already done
 
-# modelo da base de dados
+# database model
 https://dbdiagram.io/d/5f2fecc008c7880b65c59975
 
-# ficheiro de connexao com banco de dados POSTGRESQL
+# Authentication
+
+"SimpletokenAuthentication" authentication has been implemented,
+After authenticating all requests must be done by sending auth_token in the header
+
+# Connection file with POSTGRESQL database
 
 /config/database.yml
 

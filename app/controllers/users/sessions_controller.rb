@@ -19,7 +19,8 @@ class Users::SessionsController < Devise::SessionsController
             :id => resource.id, 
             :first_name => resource.first_name, 
             :last_name => resource.last_name, 
-            :email => resource.email
+            :email => resource.email, 
+            :roles_masks => resource.roles_masks
         }
         return
     end
