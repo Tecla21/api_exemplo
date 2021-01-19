@@ -13,15 +13,19 @@ class Users::SessionsController < Devise::SessionsController
         sign_in(resource_name, resource)
         yield resource if block_given?
         
-        render :json => {
-            :success => true, 
-            :auth_token => resource.authentication_token, 
-            :id => resource.id, 
-            :first_name => resource.first_name, 
-            :last_name => resource.last_name, 
-            :email => resource.email, 
-            :roles_masks => resource.roles_masks
-        }
+        if resource.present?
+            render :json => {
+                :success => true, 
+                :auth_token => resource.authentication_token, 
+                :id => resource.id, 
+                :first_name => resource.first_name, 
+                :last_name => resource.last_name, 
+                :email => resource.email, 
+                :roles_masks => resource.roles_masks
+            }
+        else
+            render :json=> resource.errors, :status=>500
+        end
         return
     end
 
